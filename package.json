@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "tsc -w",
-    "build": "napi build"
+    "build": "napi build "
   },
   "devDependencies": {
     "@napi-rs/cli": "2.5.0",
@@ -15,5 +15,8 @@
   },
   "dependencies": {
     "@types/node": "^17.0.23"
+  },
+  "napi": {
+    "name": "function_tool"
   }
 }

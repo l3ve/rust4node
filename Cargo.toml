@@ -4,17 +4,17 @@ edition = "2021"
 name = "rust4node"
 version = "0.1.0"
 
-
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-napi = "2.2.0"
+napi = { version = "2.2.0", features = ["tokio_fs", "tokio_rt"] }
 napi-derive = "2.2.0"
 serde_derive = "1.0.136"
+futures = "0.3.21"
 
 [target.'cfg(all(any(windows, unix), target_arch = "x86_64", not(target_env = "musl")))'.dependencies]
-mimalloc = {version = "0.1.28"}
+mimalloc = { version = "0.1.28" }
 
 [build-dependencies]
 napi-build = "1.2.1"

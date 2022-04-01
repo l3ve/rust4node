@@ -2,3 +2,6 @@
 /.vscode
 /dist
 /target
+
+function_tool.*
+index.d.ts
