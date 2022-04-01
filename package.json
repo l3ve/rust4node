@@ -1,0 +1,19 @@
+{
+  "name": "rust",
+  "version": "1.0.0",
+  "description": "rust4node",
+  "main": "./dist/index.js",
+  "author": "sansan <kuangsan.li@tuya.com>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "napi build"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "2.5.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@types/node": "^17.0.23"
+  }
+}
